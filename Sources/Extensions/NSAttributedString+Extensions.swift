@@ -45,7 +45,7 @@ extension NSAttributedString {
   }
 
   public func size(considering size: CGSize) -> CGSize {
-    let rect = boundingRect(with: size, options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
+    let rect = boundingRect(with: size, options: [.usesLineFragmentOrigin], context: nil)
     return rect.size
   }
 }
